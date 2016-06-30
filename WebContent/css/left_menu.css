@@ -1,0 +1,32 @@
+.left_menu {
+	background-color: rgb(230, 230, 230);
+	border-radius: 10px;
+	padding: 0 25px;
+	float: left;
+}
+
+.left_menu h1 {
+	text-transform: uppercase;
+	color: rgb(35, 200, 160);
+	font: normal 20px "Comic Sans MS";
+}
+
+.left_menu ul {
+	padding-left: 0;
+}
+
+.left_menu li {
+	list-style: none;
+    background: url("../images/b2.png") no-repeat 0 50%;
+	padding-left: 1em;
+}
+
+.left_menu a {
+	font: normal 1em "Comic Sans MS";
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+}
+
+.left_menu a:hover {
+	color: rgb(230, 60, 5);
+}

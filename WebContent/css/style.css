@@ -1,0 +1,43 @@
+body {
+	padding: 0 120px;
+}
+
+center {
+	margin-left: 160px;
+	displey: inline-block;
+}
+
+.item {
+	text-align: left;
+	display: inline-block;
+}
+
+.item h1{
+
+}
+
+.item a {
+	color: white;
+	text-decoration: none;
+	background-color: rgb(5, 135, 190);
+	font: normal 20px "Trebuchet MS";
+	padding-right: 0.5em;
+}
+
+.item img {
+	margin: 0 6px;
+}
+
+.item div {
+	display: inline-block; 
+	vertical-align: top; 
+	width: 10em;
+}
+
+footer {
+	margin-top: 1em;
+	padding: 0.5em;
+	width: 100%;
+	color: white;
+	background-color: rgb(100, 100, 100);
+}

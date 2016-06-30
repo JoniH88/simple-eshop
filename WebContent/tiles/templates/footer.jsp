@@ -1,0 +1,1 @@
+<footer>&copy; EshopCompany </footer>

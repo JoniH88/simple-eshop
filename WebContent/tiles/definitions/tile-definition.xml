@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template = "/tiles/templates/baseLayout.jsp">
+		<put-attribute name="admin_menu" value=""/>
+		<put-attribute name="main_menu" value="/views/main_menu.jsp" />
+		<put-attribute name="left_menu" value="/views/left_menu.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/tiles/templates/footer.jsp" />
+	</definition>
+	
+	<definition name="main" extends="baseLayout">
+		<put-attribute name="content" value="/views/products.jsp"/>
+	</definition>
+	
+	<definition name="admin_menu" extends="baseLayout">
+		<put-attribute name="admin_menu" value="/tiles/templates/admin_menu.jsp"/>
+	</definition>
+	
+	<definition name="products" extends="baseLayout">
+		<put-attribute name="content" value="/views/products.jsp"/>
+	</definition>
+	
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="content" value="/views/login.jsp"/>
+	</definition>
+	
+	<definition name="editCategories" extends="admin_menu">
+		<put-attribute name="content" value="/views/edit_categories.jsp"/>
+	</definition>
+	
+	<definition name="editProduct" extends="baseLayout">
+		<put-attribute name="content" value="/views/edit_product.jsp"/>
+	</definition>
+	
+	<definition name="addProduct" extends="admin_menu">
+		<put-attribute name="content" value="/views/add_product.jsp"/>
+	</definition>
+</tiles-definitions>
